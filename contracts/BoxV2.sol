@@ -11,7 +11,7 @@ contract BoxV2 {
         emit ValueChanged(_newValue);
     }
 
-    function retrive() public view returns (uint256) {
+    function retrieve() public view returns (uint256) {
         return value;
     }
 
