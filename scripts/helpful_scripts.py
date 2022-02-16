@@ -62,4 +62,5 @@ def upgrade_contract(
         else:
             transaction = proxy.upgradeTo(newImplementationAddress, {"from", account})
 
+    transaction.wait(1)
     return transaction
